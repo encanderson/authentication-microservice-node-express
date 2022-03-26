@@ -5,9 +5,9 @@ require("express-async-errors");
 
 // import routes from "./routes";
 
-// import { headersMiddleware, errorMiddleware } from "./api/middleware";
+import { headersMiddleware, errorMiddleware } from "./api/middleware";
 
-// require("./api/subscribers");
+require("./api/subscribers");
 
 import logger from "./logs";
 
@@ -26,7 +26,7 @@ export class ServerSetup {
 
   private setupExpress(): void {
     this.app.use(cors(config.corsOptions));
-    // headersMiddleware(this.app);
+    headersMiddleware(this.app);
 
     this.app.use(
       json({
@@ -42,7 +42,7 @@ export class ServerSetup {
 
     // routes(this.app);
 
-    // errorMiddleware(this.app);
+    errorMiddleware(this.app);
   }
 
   start(PORT: number): void {
