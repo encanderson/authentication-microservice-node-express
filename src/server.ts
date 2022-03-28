@@ -3,15 +3,16 @@ import express, { json, urlencoded } from "express";
 import cors from "cors";
 require("express-async-errors");
 
-// import routes from "./routes";
+import routes from "./routes";
 
 import { headersMiddleware, errorMiddleware } from "./api/middleware";
 
 require("./api/subscribers");
 
 import logger from "./logs";
-
 import { config } from "./config";
+
+import { initialize } from "./api/services";
 
 export class ServerSetup {
   httpServer: http.Server;
@@ -26,6 +27,9 @@ export class ServerSetup {
 
   private setupExpress(): void {
     this.app.use(cors(config.corsOptions));
+
+    initialize(this.app);
+
     headersMiddleware(this.app);
 
     this.app.use(
@@ -40,7 +44,7 @@ export class ServerSetup {
       })
     );
 
-    // routes(this.app);
+    routes(this.app);
 
     errorMiddleware(this.app);
   }

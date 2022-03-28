@@ -8,7 +8,7 @@ datasource db {
 }
 
 
-model Auth {
+model User {
   id         String   @id @default(uuid())
   userId     String   @unique
   active     Boolean
@@ -20,5 +20,5 @@ model Auth {
   updatedAt  DateTime
   consents   Json?
 
-  @@map("authentication")
+  @@map("users")
 }

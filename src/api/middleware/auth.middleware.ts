@@ -23,6 +23,10 @@ export class AuthMiddleware {
         return res.status(500).send({ message: error.message });
       }
 
+      if (!user) {
+        return res.status(401).send({ message: "Acesso negado." });
+      }
+
       const token = AccessToken.generateToken({
         userId: user.userId,
         expires: "3m",

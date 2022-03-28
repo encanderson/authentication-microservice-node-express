@@ -1,0 +1,201 @@
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T12:49:29.120Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T13:06:13.960Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T13:55:18.420Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T13:55:27.706Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T14:00:12.371Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T14:31:31.426Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T14:55:58.459Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T14:57:26.490Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T14:59:00.679Z'
+}
+{
+  message: 'Unknown authentication strategy "local"',
+  level: 'error',
+  timestamp: '2022-03-28T14:59:03.755Z'
+}
+{ level: 'error', timestamp: '2022-03-28T15:10:41.421Z' }
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:10:49.196Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:16:50.101Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:17:36.286Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:19:21.499Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:20:32.478Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:23:17.467Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:32:38.357Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:33:31.656Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHVUCl.o.muf6n9YkHVVI4bjgcDBRehAAAAAaHdw00ViV3R7xOWK1-d9rM',
+  level: 'info',
+  timestamp: '2022-03-28T15:33:40.168Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHVUCl.o.muf6n9YkHVw0eRuwbe20sZAAAAAhp4DZOJkK8.9q.6YIzWOnk',
+  level: 'info',
+  timestamp: '2022-03-28T15:35:31.864Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:39:09.467Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHWoSl.o.muf7fxYkHWpaJrowcPtIkKAAAAAcfTnDmonl-iGCclzYVHnPA',
+  level: 'info',
+  timestamp: '2022-03-28T15:39:17.652Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:39:36.482Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHWwyl.o.muf7kdYkHWxo4bjgcDBRfyAAAAAd7Q210RAZZqFOextOpnRCs',
+  level: 'info',
+  timestamp: '2022-03-28T15:39:51.137Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:40:31.570Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:40:37.849Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHW-Cl.o.muf7scYkHW-0eRuwbe20uIAAAAAXy3oyHXwJ-3EV4e5lnn4m4',
+  level: 'info',
+  timestamp: '2022-03-28T15:40:44.118Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:42:01.722Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHXTSl.o.muf73fYkHXUN6ghQb4GQ7wAAAAAdlJ03wXUwDaTefiALg1E.4',
+  level: 'info',
+  timestamp: '2022-03-28T15:42:09.007Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:44:38.235Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:44:57.431Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:46:06.429Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:46:09.199Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHYWCl.o.muf8agYkHYW6JrowcPtIlcAAAAAZRU27eOig0RYZSX64.0lsk',
+  level: 'info',
+  timestamp: '2022-03-28T15:46:35.864Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:51:50.296Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:52:04.847Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:52:50.868Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:55:08.464Z'
+}
+{
+  message: 'Listening at 6000',
+  level: 'info',
+  timestamp: '2022-03-28T15:55:43.438Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkHcTyl.o.muf-iHYkHcU0eRuwbe202AAAAAAeBb.vtRNUewgwh28ueqShU',
+  level: 'info',
+  timestamp: '2022-03-28T16:03:31.239Z'
+}
