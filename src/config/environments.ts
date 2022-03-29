@@ -24,6 +24,7 @@ export let config: Config = {
   blocklist: {
     prefix: "blocklist-access-token:",
   },
+  url: process.env.CONFIRM_EMAIL,
 };
 
 if (environment === "production") {
@@ -49,6 +50,7 @@ if (environment === "production") {
       host: "redis",
       port: 6379,
     },
+    url: process.env.CONFIRM_EMAIL,
   };
 } else {
   config = {
@@ -69,5 +71,6 @@ if (environment === "production") {
     blocklist: {
       prefix: "blocklist-access-token:",
     },
+    url: process.env.CONFIRM_EMAIL,
   };
 }

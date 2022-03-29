@@ -13,7 +13,6 @@ export class RefreshToken {
   static async generateToken(data: {
     userId: string;
     app: string;
-    expires: string;
   }): Promise<RefreshData> {
     const expirationDate = moment().add(3, "d").unix();
     const newRefreshToken = crypto.randomBytes(24).toString("hex");

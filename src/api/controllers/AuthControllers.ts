@@ -1,5 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 
+import { AuthServices } from "../services";
+import { setHeaderTokens } from "../../utils";
+
 export class AuthControllers {
   static async signIn(
     req: Request,
@@ -21,7 +24,13 @@ export class AuthControllers {
     try {
       const { code } = req.body;
 
-      res.status(200).send(code);
+      const user = await AuthServices.checkSignIn(req.user, code);
+
+      setHeaderTokens(res, user);
+
+      res.status(200).send({
+        message: "Seja bem vindo de volta.",
+      });
     } catch (err) {
       next(err);
     }
