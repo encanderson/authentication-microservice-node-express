@@ -1,0 +1,20 @@
+# docker-compose --env-file path/.env
+version: "3.8"
+
+services:
+  auth:
+    build: .
+    container_name: auth
+    restart: unless-stopped
+    command: npm run start
+    ports:
+      - 6000:6000
+    env_file:
+      - ./.env
+    volumes:
+      - ./dist:/app/dist
+      - ./prisma:/app/prisma
+networks:
+  default:
+    external: true
+    name: orisistem-network

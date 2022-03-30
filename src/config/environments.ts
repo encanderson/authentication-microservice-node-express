@@ -42,13 +42,11 @@ if (environment === "production") {
     },
     allowlist: {
       prefix: "allowlist-refresh-token:",
-      host: "redis",
-      port: 6379,
+      url: "redis://redis:6379",
     },
     blocklist: {
       prefix: "blocklist-access-token:",
-      host: "redis",
-      port: 6379,
+      url: "redis://redis:6379",
     },
     url: process.env.CONFIRM_EMAIL,
   };

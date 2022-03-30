@@ -14,11 +14,13 @@ export interface Config {
     prefix: string;
     host?: string;
     port?: number;
+    url?: string;
   };
   blocklist: {
     prefix: string;
     host?: string;
     port?: number;
+    url?: string;
   };
   url?: string;
 }
