@@ -13,7 +13,6 @@ import {
 import { Blocklist } from "../subscribers";
 import { htmlVerify } from "../models";
 import { sendEmail } from "./";
-import { NotAuthenticate } from "../../errors";
 
 passport.use(
   new LocalStrategy(
@@ -24,10 +23,6 @@ passport.use(
     async (cpf, password, done) => {
       try {
         const user = await AuthRepository.verifyUser(hashFunction(cpf));
-
-        if (!user) {
-          throw new NotAuthenticate("Usuário não encontrado.");
-        }
 
         await comparePassword(password, user.password);
 

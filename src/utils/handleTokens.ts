@@ -5,19 +5,19 @@ import { RefreshToken, AccessToken } from "@src/utils";
 
 export const getTokens = (
   req: Request
-): { token: string; refreshToken: string } => {
+): { accessToken: string; refreshToken: string } => {
   const authHeader = req.headers.authorization;
 
   const parts = authHeader.split(" ");
 
-  let token: string;
+  let accessToken: string;
 
   if (parts.length === 2) {
-    token = parts[1];
+    accessToken = parts[1];
   }
   const refreshToken = req.header("refresh-token");
 
-  return { token, refreshToken };
+  return { accessToken, refreshToken };
 };
 
 export const setHeaderTokens = (res: Response, user: User): User => {

@@ -2,10 +2,7 @@ import { prisma } from "../../database";
 
 import { User } from "../../@types";
 
-import { hashPassword, AccessToken } from "../../utils";
-import { NotAuthenticate } from "../../errors";
-import { sendEmail } from "../services";
-import { htmlCode } from "../models";
+import { hashPassword, isUser, createdAt } from "../../utils";
 
 export class AuthRepository {
   static async verifyUser(userId: string): Promise<User> {
@@ -20,30 +17,11 @@ export class AuthRepository {
         email: true,
         password: true,
         app: true,
+        code: true,
       },
     });
 
-    if (!user.active) {
-      const token = AccessToken.generateToken({
-        userId: userId,
-        expires: "180m",
-        app: user.app,
-      });
-
-      await sendEmail(
-        user.email,
-        "Verificação de email",
-        htmlCode(token, "confirmar-registro")
-      );
-
-      throw new NotAuthenticate(
-        "Email não confirmado, por favor, verifique o seu email."
-      );
-    }
-
-    if (!user) {
-      return null;
-    }
+    await isUser(user);
 
     return user;
   }
@@ -58,18 +36,20 @@ export class AuthRepository {
         },
         data: {
           password: password,
+          updatedAt: createdAt(),
+        },
+      });
+    } else {
+      await prisma.user.update({
+        where: {
+          userId: userId,
+        },
+        data: {
+          ...data,
+          updatedAt: createdAt(),
         },
       });
     }
-
-    await prisma.user.update({
-      where: {
-        userId: userId,
-      },
-      data: {
-        code: data.code,
-      },
-    });
   }
 
   static async confirmUser(userId: string): Promise<number> {
@@ -85,5 +65,16 @@ export class AuthRepository {
     if (user) {
       return user.code;
     }
+  }
+
+  static async confirmEmail(userId: string): Promise<void> {
+    await prisma.user.update({
+      where: {
+        userId: userId,
+      },
+      data: {
+        active: true,
+      },
+    });
   }
 }
