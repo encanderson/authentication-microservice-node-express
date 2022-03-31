@@ -50,12 +50,12 @@ export class AuthServices {
     }
   }
 
-  static async confirmUser(token: string, userCode: number): Promise<string> {
+  static async confirmUser(token: string, code: number): Promise<string> {
     const { userId } = AccessToken.verifyToken(token);
 
-    const code = await AuthRepository.verifyUser(userId);
+    const user = await AuthRepository.verifyUser(userId);
 
-    if (code != userCode) {
+    if (user.code != code) {
       throw new NotAuthenticate("Código Inválido");
     }
 

@@ -1079,3 +1079,513 @@
   level: 'info',
   timestamp: '2022-03-30T13:46:32.464Z'
 }
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:13:05.658Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:13:20.895Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:14:24.778Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:14:44.053Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:17:58.718Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:23:31.880Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:23:34.524Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:23:43.216Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:23:50.078Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:23:50.387Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:30:59.257Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:30:59.610Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:31:04.060Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:31:04.729Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:31:04.818Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:31:05.049Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:34:21.010Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:34:24.652Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:34:25.821Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:34:42.611Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:34:47.198Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:35:33.622Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:35:43.015Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:35:43.614Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:39:11.571Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:39:35.864Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:39:38.615Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:39:45.123Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:39:52.183Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:39:53.619Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:40:01.355Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:40:02.769Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:40:04.420Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:40:04.507Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:40:33.967Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:40:38.561Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:41:22.436Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:41:25.844Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:22.522Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:25.308Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:28.777Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:29.247Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:36.996Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:37.093Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:37.914Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:38.113Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:39.318Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:42:40.157Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:43:06.292Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:43:06.658Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:43:07.362Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:43:07.847Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:44:12.897Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:44:16.598Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:44:36.719Z'
+}
+{
+  message: 'O tipo de conteúdo text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:44:42.178Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:44:43.188Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:44:51.164Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:45:01.785Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:46:33.048Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:47:07.384Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:47:10.923Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:48:49.758Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:48:50.184Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:48:59.554Z'
+}
+{
+  message: 'O tipo de conteúdo image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 não é suportado',
+  level: 'error',
+  timestamp: '2022-03-31T12:48:59.789Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:49:38.014Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:51:21.323Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:51:27.118Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:51:40.185Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:51:46.072Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:52:05.725Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:52:22.848Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T12:52:42.884Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:11:04.079Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:13:46.330Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW3Pyl.o.mutkiEYkW3QmA-IgbX9tASAAAAAXpbrCwsuUtILoOyDI98fCc',
+  level: 'info',
+  timestamp: '2022-03-31T14:14:27.151Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW3Pyl.o.mutkiEYkW3cN6ghQb4G-zpAAAAAnF9GtdZKiIhqE62hJwPLyk',
+  level: 'info',
+  timestamp: '2022-03-31T14:15:13.027Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:15:47.745Z'
+}
+{
+  message: 'Código inválido.',
+  level: 'error',
+  timestamp: '2022-03-31T14:17:07.679Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW3Pyl.o.mutkiEYkW5MRxD1gdSRj55AAAAA-eZVjFmHnL6kgkkj1icogc',
+  level: 'info',
+  timestamp: '2022-03-31T14:22:42.200Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:23:15.372Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:23:23.034Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW3Pyl.o.mutkiEYkW5pRxD1gdSRj6gAAAABGwT4KbWeux-PoGIp-hHRjs',
+  level: 'info',
+  timestamp: '2022-03-31T14:24:38.211Z'
+}
+{
+  message: 'Código inválido.',
+  level: 'error',
+  timestamp: '2022-03-31T14:25:16.989Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW3Pyl.o.mutkiEYkW6CEeRuwbe3i6EAAAABajRD2MBWY1aGYvFB3-Rv8s',
+  level: 'info',
+  timestamp: '2022-03-31T14:26:16.218Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:27:12.862Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:27:33.559Z'
+}
+{
+  message: 'jwt expired',
+  level: 'error',
+  timestamp: '2022-03-31T14:29:55.740Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW3Pyl.o.mutkiEYkW7EnwpdQbl.-e5AAAABqo7x8vZrfwgiKjiQVQ877w',
+  level: 'info',
+  timestamp: '2022-03-31T14:30:42.977Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:31:06.176Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:32:31.013Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:32:35.565Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:32:43.209Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:32:56.175Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:32:58.132Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:33:20.618Z'
+}
+{
+  message: 'Listening at 7000',
+  level: 'info',
+  timestamp: '2022-03-31T14:33:27.914Z'
+}
+{
+  message: 'URL: https://ethereal.email/message/YkW8Xil.o.mutoR.YkW8YWA-IgbX9tTGAAAAAZjEaWRzfJrLp4j65vlh7ZI',
+  level: 'info',
+  timestamp: '2022-03-31T14:36:18.040Z'
+}
+{
+  message: 'Código Inválido',
+  level: 'error',
+  timestamp: '2022-03-31T14:37:57.223Z'
+}
+{
+  message: 'jwt must be provided',
+  level: 'error',
+  timestamp: '2022-03-31T14:39:16.159Z'
+}
+{
+  message: 'Usuário não reconhecido.',
+  level: 'error',
+  timestamp: '2022-03-31T14:45:01.554Z'
+}

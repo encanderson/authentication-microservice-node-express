@@ -25,6 +25,7 @@ export class AuthControllers {
     next: NextFunction
   ): Promise<void> {
     try {
+      console.log("first");
       res.status(200).send(req.user);
     } catch (err) {
       next(err);

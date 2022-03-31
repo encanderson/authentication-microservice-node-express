@@ -9,7 +9,7 @@ const environment = process.env.NODE_ENV;
 export let config: Config = {
   secretkey: process.env.SECRET_KEY,
   POSTGRESQL_URI: process.env.POSTGRESQL_URI,
-  PORT: 6000,
+  PORT: 7000,
   emailUser: process.env.EMAIL_USER,
   emailPass: process.env.EMAIL_PASS,
   emailServer: process.env.MAIL_SERVER,
@@ -54,7 +54,7 @@ if (environment === "production") {
   config = {
     secretkey: process.env.SECRET_KEY,
     POSTGRESQL_URI: process.env.POSTGRESQL_URI,
-    PORT: 6000,
+    PORT: 7000,
     emailUser: process.env.EMAIL_USER,
     emailPass: process.env.EMAIL_PASS,
     emailServer: process.env.MAIL_SERVER,

@@ -10,7 +10,10 @@ export const headersMiddleware = (app: express.Application): void => {
 
     const applicationFormat = req.header("Accept");
 
-    if (formatsAccepts.indexOf(applicationFormat) === -1) {
+    if (
+      formatsAccepts.indexOf(applicationFormat) === -1 &&
+      req.originalUrl !== "/docs"
+    ) {
       throw new NotSupport(applicationFormat);
     }
 
