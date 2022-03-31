@@ -25,6 +25,7 @@ export let config: Config = {
     prefix: "blocklist-access-token:",
   },
   url: process.env.CONFIRM_EMAIL,
+  root: "./src",
 };
 
 if (environment === "production") {
@@ -49,6 +50,7 @@ if (environment === "production") {
       url: "redis://redis:6379",
     },
     url: process.env.CONFIRM_EMAIL,
+    root: "./dist",
   };
 } else {
   config = {
@@ -70,5 +72,6 @@ if (environment === "production") {
       prefix: "blocklist-access-token:",
     },
     url: process.env.CONFIRM_EMAIL,
+    root: "./src",
   };
 }

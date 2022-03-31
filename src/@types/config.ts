@@ -23,4 +23,5 @@ export interface Config {
     url?: string;
   };
   url?: string;
+  root?: string;
 }
