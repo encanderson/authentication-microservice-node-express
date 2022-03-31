@@ -92,7 +92,7 @@ export class AuthControllers {
     try {
       const { code, token } = req.body;
 
-      const accessToken = await AuthServices.confirmUser(token, code);
+      const accessToken = await AuthServices.confirmUser(token, Number(code));
 
       res.status(200).send({
         token: accessToken,
