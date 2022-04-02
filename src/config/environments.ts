@@ -24,7 +24,7 @@ export let config: Config = {
   blocklist: {
     prefix: "blocklist-access-token:",
   },
-  url: process.env.CONFIRM_EMAIL,
+  url: "http://oriedu.orianderson.com",
   root: "./src",
 };
 
@@ -49,7 +49,7 @@ if (environment === "production") {
       prefix: "blocklist-access-token:",
       url: "redis://redis:6379",
     },
-    url: process.env.CONFIRM_EMAIL,
+    url: "http://www.tiadidi.com.br",
     root: "./dist",
   };
 } else {
@@ -71,7 +71,7 @@ if (environment === "production") {
     blocklist: {
       prefix: "blocklist-access-token:",
     },
-    url: process.env.CONFIRM_EMAIL,
+    url: "http://oriedu.orianderson.com",
     root: "./src",
   };
 }
