@@ -38,7 +38,10 @@ if (environment === "production") {
     emailServer: process.env.MAIL_SERVER_ZOHO,
     geobingKey: process.env.GEOBING_KEY,
     corsOptions: {
-      origin: "*",
+      origin: [
+        "https://www.tiadidi.com.br",
+        "https://secretaria.tiadidi.com.br",
+      ],
       "Access-Control-Allow-Credentials": true,
     },
     allowlist: {

@@ -7,7 +7,7 @@ export interface Config {
   emailServer: string;
   geobingKey: string;
   corsOptions: {
-    origin: string;
+    origin: string | string[];
     "Access-Control-Allow-Credentials": boolean;
   };
   allowlist: {
