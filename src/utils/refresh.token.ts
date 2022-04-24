@@ -11,7 +11,7 @@ interface RefreshData {
 
 export class RefreshToken {
   static async generateToken(data: {
-    userId: string;
+    user_id: string;
     app: string;
   }): Promise<RefreshData> {
     const expirationDate = moment().add(3, "d").unix();
@@ -43,9 +43,9 @@ export class RefreshToken {
   }
 
   static async getUserId(refreshToken: string): Promise<string | null> {
-    const userId = await managerAllowlist.getKey(refreshToken);
+    const user_id = await managerAllowlist.getKey(refreshToken);
 
-    return userId;
+    return user_id;
   }
 }
-// userId, "15m"
+// user_id, "15m"

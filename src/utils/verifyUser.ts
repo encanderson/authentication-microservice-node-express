@@ -11,7 +11,7 @@ export const isUser = async (user: User): Promise<void> => {
 
   if (!user.active) {
     const token = AccessToken.generateToken({
-      userId: user.userId,
+      user_id: user.user_id,
       expires: "180m",
       app: user.app,
     });

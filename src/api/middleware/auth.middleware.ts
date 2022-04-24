@@ -28,13 +28,13 @@ export class AuthMiddleware {
       }
 
       const token = AccessToken.generateToken({
-        userId: user.userId,
+        user_id: user.user_id,
         expires: "3m",
         app: user.app,
         id: user.id,
       });
 
-      delete user.userId;
+      delete user.user_id;
 
       req.user = {
         ...user,
@@ -74,7 +74,7 @@ export class AuthMiddleware {
           }
 
           req.user = {
-            userId: payload.userId,
+            user_id: payload.user_id,
             app: payload.app,
             id: payload.id,
           };

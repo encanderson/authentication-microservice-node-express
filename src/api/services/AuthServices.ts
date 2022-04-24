@@ -7,21 +7,21 @@ import { managerAllowlist, Blocklist } from "../subscribers";
 
 export class AuthServices {
   static async checkSignIn(user: User, userCode: number): Promise<User> {
-    const code = await AuthRepository.confirmUser(user.userId);
+    const code = await AuthRepository.confirmUser(user.user_id);
 
     if (code != userCode) {
       throw new NotAuthenticate("Código inválido.");
     }
 
     const accessToken = AccessToken.generateToken({
-      userId: user.userId,
+      user_id: user.user_id,
       expires: "15m",
       app: user.app,
       id: user.id,
     });
 
     const { newRefreshToken } = await RefreshToken.generateToken({
-      userId: user.userId,
+      user_id: user.user_id,
       app: user.app,
     });
 
@@ -34,7 +34,7 @@ export class AuthServices {
   static async confirmEmail(token: string): Promise<void> {
     const payload = AccessToken.verifyToken(token);
 
-    await AuthRepository.confirmEmail(payload.userId);
+    await AuthRepository.confirmEmail(payload.user_id);
   }
 
   static async logout(
@@ -51,9 +51,9 @@ export class AuthServices {
   }
 
   static async confirmUser(token: string, code: number): Promise<string> {
-    const { userId } = AccessToken.verifyToken(token);
+    const { user_id } = AccessToken.verifyToken(token);
 
-    const user = await AuthRepository.verifyUser(userId);
+    const user = await AuthRepository.verifyUser(user_id);
 
     if (user.code != code) {
       throw new NotAuthenticate("Código Inválido");
@@ -62,7 +62,7 @@ export class AuthServices {
     await Blocklist.setToken(token);
 
     const accessToken = AccessToken.generateToken({
-      userId: userId,
+      user_id: user_id,
       app: "",
       expires: "5m",
     });

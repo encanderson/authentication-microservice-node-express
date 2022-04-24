@@ -5,14 +5,14 @@ import { User } from "../../@types";
 import { hashPassword, isUser, createdAt } from "../../utils";
 
 export class AuthRepository {
-  static async verifyUser(userId: string): Promise<User> {
+  static async verifyUser(user_id: string): Promise<User> {
     const user = await prisma.user.findUnique({
       where: {
-        userId: userId,
+        user_id: user_id,
       },
       select: {
         id: true,
-        userId: true,
+        user_id: true,
         active: true,
         email: true,
         password: true,
@@ -26,13 +26,13 @@ export class AuthRepository {
     return user;
   }
 
-  static async update(userId: string, data: User): Promise<void> {
+  static async update(user_id: string, data: User): Promise<void> {
     if (data.password) {
       const password = await hashPassword(data.password);
 
       await prisma.user.update({
         where: {
-          userId: userId,
+          user_id: user_id,
         },
         data: {
           password: password,
@@ -42,7 +42,7 @@ export class AuthRepository {
     } else {
       await prisma.user.update({
         where: {
-          userId: userId,
+          user_id: user_id,
         },
         data: {
           ...data,
@@ -52,10 +52,10 @@ export class AuthRepository {
     }
   }
 
-  static async confirmUser(userId: string): Promise<number> {
+  static async confirmUser(user_id: string): Promise<number> {
     const user = await prisma.user.findUnique({
       where: {
-        userId: userId,
+        user_id: user_id,
       },
       select: {
         code: true,
@@ -67,10 +67,10 @@ export class AuthRepository {
     }
   }
 
-  static async confirmEmail(userId: string): Promise<void> {
+  static async confirmEmail(user_id: string): Promise<void> {
     await prisma.user.update({
       where: {
-        userId: userId,
+        user_id: user_id,
       },
       data: {
         active: true,

@@ -36,7 +36,7 @@ passport.use(
 
         done(null, {
           app: user.app,
-          userId: hashFunction(cpf),
+          user_id: hashFunction(cpf),
           id: user.id,
         });
       } catch (err) {

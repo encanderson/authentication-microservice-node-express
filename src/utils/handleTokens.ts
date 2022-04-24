@@ -41,7 +41,7 @@ export const setNewCredentials = async (
   const user = JSON.parse(credentials);
 
   const accessToken = AccessToken.generateToken({
-    userId: user.userId,
+    user_id: user.user_id,
     expires: "15m",
     app: JSON.parse(credentials).app,
     id: user.id,

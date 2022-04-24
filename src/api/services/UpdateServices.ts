@@ -5,18 +5,18 @@ import { sendEmail } from "./";
 
 export class UpdateServices {
   static async verifyUser(cpf: string): Promise<string> {
-    const userId = hashFunction(cpf);
+    const user_id = hashFunction(cpf);
 
-    const user = await AuthRepository.verifyUser(userId);
+    const user = await AuthRepository.verifyUser(user_id);
 
     const code = generateCode();
 
     await sendEmail(user.email, "Verificar Usuário", htmlVerify(code));
 
-    await AuthRepository.update(userId, { code: code });
+    await AuthRepository.update(user_id, { code: code });
 
     const token = AccessToken.generateToken({
-      userId: user.userId,
+      user_id: user.user_id,
       app: user.app,
       expires: "3m",
     });
@@ -25,16 +25,16 @@ export class UpdateServices {
   }
 
   static async updatePassword(password: string, token: string): Promise<void> {
-    const { userId } = AccessToken.verifyToken(token);
+    const { user_id } = AccessToken.verifyToken(token);
 
-    await AuthRepository.update(userId, { password: password });
+    await AuthRepository.update(user_id, { password: password });
   }
 
   static async updateEmail(email: string, token: string): Promise<void> {
     const payload = AccessToken.verifyToken(token);
 
-    const userId = payload.userId;
+    const user_id = payload.user_id;
 
-    await AuthRepository.update(userId, { email: email });
+    await AuthRepository.update(user_id, { email: email });
   }
 }

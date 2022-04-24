@@ -5,19 +5,19 @@ import { InvalidToken } from "../errors";
 import { config } from "@src/config";
 
 interface Payload {
-  userId: string;
+  user_id: string;
   app: string;
 }
 
 export class AccessToken {
   static generateToken(data: {
-    userId: string;
+    user_id: string;
     expires: string;
     app: string;
     id?: string;
   }): string {
     const token = jwt.sign(
-      { userId: data.userId, app: data.app, id: data.id },
+      { user_id: data.user_id, app: data.app, id: data.id },
       config.secretkey,
       {
         expiresIn: data.expires,
