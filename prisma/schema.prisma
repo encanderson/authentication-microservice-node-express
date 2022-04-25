@@ -8,16 +8,16 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  user_id   String   @unique
-  active    Boolean
-  app       String
-  code      Int?
-  createdAt DateTime
-  email     String   @unique
-  password  String
-  updatedAt DateTime
-  consents  Json?
+  id         String   @id @default(uuid())
+  user_id    String   @unique
+  active     Boolean
+  app        String
+  code       Int?
+  created_at DateTime
+  email      String   @unique
+  password   String
+  updated_at DateTime
+  consents   Json?
 
   @@map("users")
 }

@@ -36,7 +36,7 @@ export class AuthRepository {
         },
         data: {
           password: password,
-          updatedAt: createdAt(),
+          updated_at: createdAt(),
         },
       });
     } else {
@@ -46,7 +46,7 @@ export class AuthRepository {
         },
         data: {
           ...data,
-          updatedAt: createdAt(),
+          updated_at: createdAt(),
         },
       });
     }
@@ -74,6 +74,10 @@ export class AuthRepository {
       },
       data: {
         active: true,
+        consents: {
+          terms: true,
+          privacy: true,
+        },
       },
     });
   }

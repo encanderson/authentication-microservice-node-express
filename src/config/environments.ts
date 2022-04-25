@@ -15,14 +15,20 @@ export let config: Config = {
   emailServer: process.env.MAIL_SERVER,
   geobingKey: process.env.GEOBING_KEY,
   corsOptions: {
-    origin: "*",
+    origin: [
+      "http://oriedu.orianderson.com",
+      "http://admin.orianderson.com:3002",
+      "http://secretaria.orianderson.com:3002",
+    ],
     "Access-Control-Allow-Credentials": true,
   },
   allowlist: {
     prefix: "allowlist-refresh-token:",
+    url: "redis://redis:6379",
   },
   blocklist: {
     prefix: "blocklist-access-token:",
+    url: "redis://redis:6379",
   },
   url: "http://oriedu.orianderson.com",
   root: "./src",
@@ -41,6 +47,7 @@ if (environment === "production") {
       origin: [
         "https://www.tiadidi.com.br",
         "https://secretaria.tiadidi.com.br",
+        "https://admin.tiadidi.com.br",
       ],
       "Access-Control-Allow-Credentials": true,
     },
@@ -54,27 +61,5 @@ if (environment === "production") {
     },
     url: "http://www.tiadidi.com.br",
     root: "./dist",
-  };
-} else {
-  config = {
-    secretkey: process.env.SECRET_KEY,
-    POSTGRESQL_URI: process.env.POSTGRESQL_URI,
-    PORT: 7000,
-    emailUser: process.env.EMAIL_USER,
-    emailPass: process.env.EMAIL_PASS,
-    emailServer: process.env.MAIL_SERVER,
-    geobingKey: process.env.GEOBING_KEY,
-    corsOptions: {
-      origin: "*",
-      "Access-Control-Allow-Credentials": true,
-    },
-    allowlist: {
-      prefix: "allowlist-refresh-token:",
-    },
-    blocklist: {
-      prefix: "blocklist-access-token:",
-    },
-    url: "http://oriedu.orianderson.com",
-    root: "./src",
   };
 }
