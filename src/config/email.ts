@@ -10,6 +10,7 @@ const settingsEmailProduction = {
     user: config.emailUser,
     pass: config.emailPass,
   },
+  tls: { rejectUnauthorized: false },
 };
 
 const settingsEmailDevelopment = (testAccount: nodemailer.TestAccount) => ({
