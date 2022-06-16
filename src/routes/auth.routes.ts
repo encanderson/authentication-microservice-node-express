@@ -24,3 +24,4 @@ router.post(
   AuthControllers.logout
 );
 router.post("/auth/confirm-user", AuthControllers.confirmUser);
+router.get("/auth", AuthMiddleware.authenticate, AuthControllers.get);

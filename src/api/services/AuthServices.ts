@@ -31,6 +31,18 @@ export class AuthServices {
     return user;
   }
 
+  static async get(user_id: string): Promise<User> {
+    const user = await AuthRepository.get(user_id);
+
+    const name = user.name;
+
+    const arrayName = name.split(" ");
+
+    user.name = arrayName[0] + " " + arrayName[arrayName.length - 1];
+
+    return user;
+  }
+
   static async confirmEmail(token: string): Promise<void> {
     const payload = AccessToken.verifyToken(token);
 

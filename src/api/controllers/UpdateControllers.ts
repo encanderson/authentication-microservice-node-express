@@ -42,9 +42,42 @@ export class UpdateControllers {
     next: NextFunction
   ): Promise<void> {
     try {
-      const { email, token } = req.body;
+      const { email } = req.body;
 
-      await UpdateServices.updateEmail(email, token);
+      const { user_id } = req.user;
+
+      await UpdateServices.updateEmail(email, user_id);
+
+      res.status(204).end();
+    } catch (err) {
+      next(err);
+    }
+  }
+
+  static async update(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<void> {
+    try {
+      const { user_id } = req.user;
+
+      const { email, picture, password, newPassword } = req.body;
+
+      if (email) {
+        await UpdateServices.update(user_id, { email: email });
+      }
+
+      if (picture) {
+        await UpdateServices.update(user_id, { picture: picture });
+      }
+
+      if (password) {
+        await UpdateServices.update(user_id, {
+          password: password,
+          newPassword: newPassword,
+        });
+      }
 
       res.status(204).end();
     } catch (err) {

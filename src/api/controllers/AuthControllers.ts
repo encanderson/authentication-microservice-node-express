@@ -51,6 +51,22 @@ export class AuthControllers {
     }
   }
 
+  static async get(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<void> {
+    try {
+      const { user_id } = req.user;
+
+      const user = await AuthServices.get(user_id);
+
+      res.status(200).send(user);
+    } catch (err) {
+      next(err);
+    }
+  }
+
   static async refreshAccessToken(
     req: Request,
     res: Response,

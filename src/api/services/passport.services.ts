@@ -22,7 +22,8 @@ passport.use(
     },
     async (cpf, password, done) => {
       try {
-        const user = await AuthRepository.verifyUser(hashFunction(cpf));
+        const user_id = hashFunction(cpf);
+        const user = await AuthRepository.verifyUser(user_id);
 
         await comparePassword(password, user.password);
 
@@ -32,11 +33,11 @@ passport.use(
 
         await sendEmail(user.email, "Código de Verificação", htmlVerify(code));
 
-        await AuthRepository.update(hashFunction(cpf), { code: code });
+        await AuthRepository.update(user_id, { code: code });
 
         done(null, {
           app: user.app,
-          user_id: hashFunction(cpf),
+          user_id: user_id,
           id: user.id,
         });
       } catch (err) {

@@ -2,7 +2,7 @@ import { prisma } from "../../database";
 
 import { User } from "../../@types";
 
-import { hashPassword, isUser, createdAt } from "../../utils";
+import { isUser, createdAt } from "../../utils";
 
 export class AuthRepository {
   static async verifyUser(user_id: string): Promise<User> {
@@ -26,30 +26,34 @@ export class AuthRepository {
     return user;
   }
 
-  static async update(user_id: string, data: User): Promise<void> {
-    if (data.password) {
-      const password = await hashPassword(data.password);
+  static async get(user_id: string): Promise<User> {
+    const user = await prisma.user.findUnique({
+      where: {
+        user_id: user_id,
+      },
+      select: {
+        id: true,
+        app: true,
+        email: true,
+        picture: true,
+        name: true,
+        user_id: true,
+      },
+    });
 
-      await prisma.user.update({
-        where: {
-          user_id: user_id,
-        },
-        data: {
-          password: password,
-          updated_at: createdAt(),
-        },
-      });
-    } else {
-      await prisma.user.update({
-        where: {
-          user_id: user_id,
-        },
-        data: {
-          ...data,
-          updated_at: createdAt(),
-        },
-      });
-    }
+    return user;
+  }
+
+  static async update(user_id: string, data: User): Promise<void> {
+    await prisma.user.update({
+      where: {
+        user_id: user_id,
+      },
+      data: {
+        ...data,
+        updated_at: createdAt(),
+      },
+    });
   }
 
   static async confirmUser(user_id: string): Promise<number> {
@@ -80,5 +84,18 @@ export class AuthRepository {
         },
       },
     });
+  }
+
+  static async getUser(user_id: string): Promise<User> {
+    const user = await prisma.user.findUnique({
+      where: {
+        user_id: user_id,
+      },
+      select: {
+        password: true,
+      },
+    });
+
+    return user;
   }
 }

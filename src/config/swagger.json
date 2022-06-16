@@ -336,6 +336,46 @@
           }
         }
       }
+    },
+    "/auth": {
+      "put": {
+        "tags": ["Update"],
+        "summary": "Update password, email or picture",
+        "description": "All fields or one field for request update",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Update"
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Generic error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Message"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "content": {
+                  "application/json": {
+                    "schema": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -388,6 +428,23 @@
             "type": "string"
           },
           "token": {
+            "type": "string"
+          }
+        }
+      },
+      "Update": {
+        "type": "object",
+        "properties": {
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "picture": {
+            "type": "string"
+          },
+          "newPassword": {
             "type": "string"
           }
         }

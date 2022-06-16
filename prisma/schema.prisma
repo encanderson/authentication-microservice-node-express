@@ -4,18 +4,20 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("POSTGRESQL_URI")
+  url      = env("POSTGRESQL_AUTH")
 }
 
 model User {
   id         String   @id @default(uuid())
   user_id    String   @unique
+  name       String
   active     Boolean
   app        String
   code       Int?
   created_at DateTime
   email      String   @unique
-  password   String
+  password   String?
+  picture    String?
   updated_at DateTime
   consents   Json?
 

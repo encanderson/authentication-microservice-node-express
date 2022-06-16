@@ -10,7 +10,8 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify --exit-child src/index.ts | pino-pretty -c",
     "test": "jest --detectOpenHandles",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "db": "npx prisma db push"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",

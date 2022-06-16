@@ -1,7 +1,14 @@
 import { AuthRepository } from "../repositories";
-import { hashFunction, generateCode, AccessToken } from "../../utils";
+import {
+  hashFunction,
+  generateCode,
+  AccessToken,
+  comparePassword,
+  hashPassword,
+} from "../../utils";
 import { htmlVerify } from "../models";
 import { sendEmail } from "./";
+import { Form } from "../../@types";
 
 export class UpdateServices {
   static async verifyUser(cpf: string): Promise<string> {
@@ -24,17 +31,32 @@ export class UpdateServices {
     return token;
   }
 
-  static async updatePassword(password: string, token: string): Promise<void> {
+  static async updatePassword(
+    newPassword: string,
+    token: string
+  ): Promise<void> {
     const { user_id } = AccessToken.verifyToken(token);
+
+    const password = await hashPassword(newPassword);
 
     await AuthRepository.update(user_id, { password: password });
   }
 
-  static async updateEmail(email: string, token: string): Promise<void> {
-    const payload = AccessToken.verifyToken(token);
-
-    const user_id = payload.user_id;
-
+  static async updateEmail(email: string, user_id: string): Promise<void> {
     await AuthRepository.update(user_id, { email: email });
+  }
+
+  static async update(user_id: string, data: Form): Promise<void> {
+    if (data.password) {
+      const user = await AuthRepository.getUser(user_id);
+
+      await comparePassword(data.password, user.password);
+
+      const password = await hashPassword(data.newPassword);
+
+      await AuthRepository.update(user_id, { password: password });
+    } else {
+      await AuthRepository.update(user_id, data);
+    }
   }
 }
